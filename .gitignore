@@ -1,0 +1,14 @@
+
+.codegpt
+
+# Codex publish defaults
+target/
+*.log
+*.out.log
+*.err.log
+.classpath
+.project
+.settings/
+.vscode/
+.idea/
+!.mvn/wrapper/maven-wrapper.jar
