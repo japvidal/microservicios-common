@@ -15,6 +15,6 @@ public class ControllerServiceLoggingAspect {
 				? joinPoint.getTarget().getClass()
 				: joinPoint.getSignature().getDeclaringType();
 		Logger logger = LoggerFactory.getLogger(targetClass);
-		logger.debug("Init method {}.{}", targetClass.getSimpleName(), joinPoint.getSignature().getName());
+		logger.info("Init method {}.{}", targetClass.getSimpleName(), joinPoint.getSignature().getName());
 	}
 }
